@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--cloud);
+    /* height: 100vh; */
+}
+
+.main-screen{
+    padding: 0px var(--horizontal-space);
+    margin-top: 105px;
+}
+
+.animation-none{
+    animation: none;
+}

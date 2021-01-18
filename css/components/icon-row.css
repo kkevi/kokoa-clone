@@ -1,0 +1,50 @@
+@keyframes jello-horizontal {
+    0% {
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+              transform: scale3d(1, 1, 1);
+    }
+}
+
+.icon-row{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-row__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-row__icon:hover{
+    color: var(--dove);
+    cursor: pointer;
+}
+
+.icon-row__icon i{
+    font-size: 30px;
+}
+
+.icon-row__icon:hover i{
+    animation: jello-horizontal 0.9s infinite;
+}
+
+.icon-row__icon span{
+    margin-top: 18px;
+}
